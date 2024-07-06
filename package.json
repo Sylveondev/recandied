@@ -1,0 +1,21 @@
+{
+  "name": "candybot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["CandyBot"],
+  "author": "SylveonDev",
+  "license": "MIT",
+  "description": "This is a remake of Fabi's bot CandyBot, built using the discord http client instead of Python.",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/Sylveondev/recandied"
+  },
+  "dependencies": {
+    "discord-interactions": "^4.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
