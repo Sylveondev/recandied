@@ -1,2 +1,2 @@
-# Recandied bot
-Homepage
+# RecandiedBot
+RecandiedBot Homepage
