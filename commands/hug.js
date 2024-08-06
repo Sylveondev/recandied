@@ -4,9 +4,15 @@ const fs = require('fs');
 
 module.exports = {
     command: {
-        name: "about",
-        description: "Sends info about the bot",
+        name: "hug",
+        description: "Hehe hug a friend",
         type: 1,
+        options: [{
+            name: "member",
+            description: "The member to use",
+            type: 6,
+            required: true
+        }],
         integration_types: [0, 1],
         contexts: [0, 1, 2]
     },
@@ -17,10 +23,13 @@ module.exports = {
      * @param {Response} response 
      */
     async run(message, response) {
+        const member = message.data.options[0].value;
+        console.log(member);
+        const img = await require('../getRandomImage').random("hug")
+        console.log(img);
         const embed = new EmbedBuilder()
-        .setTitle(`RecandiedBot`)
-        .setDescription(`RecandiedBot is an open-source recreation of [CandyBot by Fabi](https://discord.gg/Eeveelution_box) made in the http discord interaction library, offering more stability and costs way less to run, all you need is a web server. This bot was created by SylveonDev to test her skills on http requests.`)
-        .setThumbnail(`https://sylveondev.xyz/recandied/recandied.png`)
+        .setDescription(`:hugging: Awwww hehe <@${message.member.user.id}> is hugging <@${member}>!`)
+        .setImage(img)
         .setColor(0xEB3495)
         .setTimestamp(new Date())
 

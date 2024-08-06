@@ -21,7 +21,7 @@ fs.readdir(commandPath, (err, files) => {
 
 app.get('/icon', (req, res) => res.sendFile('./docs/recandied.png'));
 
-app.post('/interactions', verifyKeyMiddleware(process.env["clientpubkey"]), (req, res) => {
+app.post('/candybot', verifyKeyMiddleware(process.env["clientpubkey"]), (req, res) => {
     const message = req.body;
     
     if (message.type == InteractionType.PING) {
