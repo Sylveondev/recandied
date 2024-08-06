@@ -19,13 +19,13 @@ fs.readdir(commandPath, (err, files) => {
   }
 });
 
-app.use(function (req, res, next) {
+/* app.use(function (req, res, next) {
   if (!req.secure) {
     return res.redirect("https://" + req.headers.host + "/recandied");
   }
 
   next();
-});
+}); */
 
 app.get('/icon', (req, res) => res.sendFile('./docs/recandied.png'));
 
