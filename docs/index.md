@@ -5,5 +5,10 @@ I run on slash commands and context menus, you can view all my commands by using
 ### Self hosting
 Recandied is an open-source lightweight bot created with express and node.js, you can view the instructions to host the bot on the GitHub page. This bot runs through http rather than the gateway, so sharding is not needed to run the bot in more than 2,500 servers, so you don't need a big vps to run this project. Saves you a lot of money.
 
+### Privacy policy and terms
+Recandied is literally just a bot that sends images and stuff. What's the point in typing a long and confusing privacy policy and terms of service when literally all the bot does is send images. Don't be silly.
+
 ### Links
 [Invite the bot](https://discord.com/oauth2/authorize?client_id=1259230770472423504) | [Support server](https://discord.gg/PnUYnBbxER) | [Source code](https://github.com/Sylveondev/recandied)
+<br><br><br><br>
+###### This is an affiliate bot of Team Custard (You know, the team who made [Phoenix](https://phoenix.sylveondev.xyz))
