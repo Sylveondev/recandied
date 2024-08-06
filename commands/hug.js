@@ -28,7 +28,7 @@ module.exports = {
         const img = await require('../getRandomImage').random("hug")
         console.log(img);
         const embed = new EmbedBuilder()
-        .setDescription(`:hugging: Awwww hehe <@${message.member.user.id}> is hugging <@${member}>!`)
+        .setDescription(`:hugging: Awwww hehe <@${message.member ? message.member.user.id : message.user.id}> is hugging <@${member}>!`)
         .setImage(img)
         .setColor(0xEB3495)
         .setTimestamp(new Date())
