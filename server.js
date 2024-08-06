@@ -21,6 +21,10 @@ fs.readdir(commandPath, (err, files) => {
 
 app.get('/icon', (req, res) => res.sendFile('./docs/recandied.png'));
 
+app.get('/candybot', (req, res) => {
+  res.send(`Hello, this is the Recandied bot interaction endpoint. This is practically useless if you're not self hosting, sorry.`);
+});
+
 app.post('/candybot', verifyKeyMiddleware(process.env["clientpubkey"]), (req, res) => {
     const message = req.body;
     
