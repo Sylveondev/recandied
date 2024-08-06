@@ -21,7 +21,7 @@ fs.readdir(commandPath, (err, files) => {
 
 app.use(function (req, res, next) {
   if (!req.secure) {
-    return res.redirect("https://" + req.headers.host + res.url);
+    return res.redirect("https://" + req.headers.host + "/recandied");
   }
 
   next();
